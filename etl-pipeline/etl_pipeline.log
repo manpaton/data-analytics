@@ -1,0 +1,53 @@
+2026-04-16 10:32:08,832 - INFO - ETL started
+2026-04-16 10:32:08,879 - ERROR - Pipeline failed
+Traceback (most recent call last):
+  File "D:\python\practice python\lab10\etl.py", line 185, in run_etl
+    existing = get_existing_emails()
+  File "D:\python\practice python\lab10\etl.py", line 145, in get_existing_emails
+    cur.execute("SELECT email FROM users")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+2026-04-16 11:03:58,965 - INFO - ETL started
+2026-04-16 11:03:58,966 - INFO - Starting extract
+2026-04-16 11:04:00,889 - INFO - Extracted rows: 20
+2026-04-16 11:04:00,890 - INFO - Starting transform
+2026-04-16 11:04:00,917 - INFO - Transformed rows: 20
+2026-04-16 11:04:00,917 - INFO - Starting load
+2026-04-16 11:04:00,942 - INFO - Loaded rows: 20
+2026-04-16 11:04:00,954 - INFO - ETL finished
+2026-04-16 11:04:35,150 - INFO - ETL started
+2026-04-16 11:04:35,151 - INFO - Starting extract
+2026-04-16 11:04:41,428 - WARNING - Filtered duplicates: 0
+2026-04-16 11:04:41,428 - INFO - Extracted rows: 20
+2026-04-16 11:04:41,428 - INFO - Starting transform
+2026-04-16 11:04:41,450 - INFO - Transformed rows: 20
+2026-04-16 11:04:41,450 - INFO - Starting load
+2026-04-16 11:04:41,466 - INFO - Loaded rows: 20
+2026-04-16 11:04:41,476 - INFO - ETL finished
+2026-04-16 11:07:37,326 - INFO - Starting transform
+2026-04-16 11:07:37,338 - INFO - Transformed rows: 1
+2026-04-16 11:07:37,342 - INFO - Starting transform
+2026-04-16 11:07:37,352 - WARNING - Duplicates removed
+2026-04-16 11:07:37,355 - INFO - Transformed rows: 1
+2026-04-16 11:07:37,358 - INFO - Starting transform
+2026-04-16 11:07:37,365 - WARNING - Rows with missing email removed
+2026-04-16 11:07:37,365 - INFO - Transformed rows: 0
+2026-04-16 11:07:37,368 - INFO - Starting transform
+2026-04-16 11:14:41,478 - INFO - ETL started
+2026-04-16 11:14:41,479 - INFO - Starting extract
+2026-04-16 11:14:43,016 - WARNING - Filtered duplicates: 0
+2026-04-16 11:14:43,016 - INFO - Extracted rows: 20
+2026-04-16 11:14:43,016 - INFO - Starting transform
+2026-04-16 11:14:43,024 - INFO - Transformed rows: 20
+2026-04-16 11:14:43,024 - INFO - Starting load
+2026-04-16 11:14:43,080 - INFO - Loaded rows: 20
+2026-04-16 11:14:43,091 - INFO - ETL finished
+2026-04-16 12:07:07,206 - INFO - Starting transform
+2026-04-16 12:07:07,244 - INFO - Transformed rows: 1
+2026-04-16 12:07:07,248 - INFO - Starting transform
+2026-04-16 12:07:07,257 - WARNING - Duplicates removed
+2026-04-16 12:07:07,259 - INFO - Transformed rows: 1
+2026-04-16 12:07:07,263 - INFO - Starting transform
+2026-04-16 12:07:07,276 - WARNING - Rows with missing email removed
+2026-04-16 12:07:07,276 - INFO - Transformed rows: 0
+2026-04-16 12:07:07,280 - INFO - Starting transform
